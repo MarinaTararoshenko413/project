@@ -1,0 +1,23 @@
+<div #dragContainer class="dragContainer" [class.transition]="isDrag">
+  <div class="wrapImage">
+    <picture>
+      <source srcset="/assets/images/api-code-desktop@1x.png,
+                      /assets/images/api-code-desktop@2x.png 2x" media="(min-width: 670px)">
+      <img  src="/assets/images/api-code-mobile@1x.png"
+            srcset="/assets/images/api-code-mobile@2x.png 2x"
+            alt="Integra API code">
+    </picture>
+  </div>
+  <div class="wrapImage preview">
+    <picture>
+      <source srcset="/assets/images/api-preview-desktop@1x.png,
+                      /assets/images/api-preview-desktop@2x.png 2x" media="(min-width: 670px)">
+      <img  src="/assets/images/api-preview-mobile@1x.png"
+            srcset="/assets/images/api-preview-mobile@2x.png 2x"
+            alt="Integra API preview">
+    </picture>
+  </div>
+  <div class="dragme">
+    <span class="wrapIcon size-60 accent-rose"></span>
+  </div>
+</div>

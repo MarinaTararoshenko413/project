@@ -1,0 +1,30 @@
+.wrapHeader
+  position: sticky
+  top: 0
+  padding: 20px 0
+  background-color: #282828
+  box-shadow: 0 2px 2px rgba(5,13,64,.1)
+  z-index: 1001
+
+  ul
+    display: flex
+    align-items: center
+    list-style: none
+    padding: 0
+    margin: 0
+
+    li
+      & + li
+        margin-left: 8px
+      a
+        display: inline-block
+        font-size: 20px
+        line-height: 40px
+        color: #fff
+        padding: 0 8px
+
+        &:hover:not(.active)
+          opacity: .8
+
+        &.active
+          color: #428FD7

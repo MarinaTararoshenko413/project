@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class="center">Example pagination</h1>
+
+  <hr>
+
+  <div class="listPagination__wrapper">
+    <div class="listPagination__label">{{currentMin + 1}}-{{currentMax}} de {{maxArr}}</div>
+    <ul class="listPagination">
+      <li *ngFor="let item of list.slice(currentMin, currentMax); let i = index">{{item.id}}. {{item.name}}</li>
+    </ul>
+
+    <div class="listPagination__nav">
+      <button mat-icon-button [disabled]="prevEnabled" (click)="prevItems()">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      <button mat-icon-button [disabled]="nextEnabled" (click)="nextItems()">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+

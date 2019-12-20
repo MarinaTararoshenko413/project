@@ -1,0 +1,31 @@
+h1
+  text-align: center
+
+.sidenav
+  display: flex
+  align-items: center
+  justify-content: center
+  list-style: none
+  padding: 0
+  margin: 0
+
+  li
+    & + li
+      margin-left: 16px
+    a
+      display: inline-block
+      font-size: 20px
+      line-height: 40px
+      font-weight: 700
+      color: rgba(0,0,0,.87)
+      padding: 0 16px
+      border-radius: 4px
+      border: 1px solid rgba(0,0,0,.4)
+
+      &:hover
+        background-color: #ccc
+
+      &.active
+        color: #fff
+        background-color: #428FD7
+        border-color: #428FD7

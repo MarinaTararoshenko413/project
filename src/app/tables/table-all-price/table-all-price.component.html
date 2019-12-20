@@ -1,0 +1,55 @@
+<div class="tableAllPrice">
+  <div class="tableAllPrice__header">
+    <ng-container *ngIf="!isTablet">
+      <div class="tableAllPrice__th" *ngFor="let cell of dataTablePrice.table_header">{{cell}}</div>
+    </ng-container>
+
+    <ng-container *ngIf="isTablet">
+      <div class="tableAllPrice__th">Valores en Pesos Chilenos</div>
+      <div class="tableAllPrice__th">
+        <button mat-button [matMenuTriggerFor]="menuPeriod">
+          <span>{{currencyPeriod}}</span>
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+
+        <mat-menu class="codeHighlighting__dropdown" #menuPeriod="matMenu">
+          <ng-container *ngFor="let item of dataTablePrice.table_header; let i = index">
+            <button mat-menu-item (click)="selectedPeriod(item, i)" *ngIf="i !== 0">{{item}}</button>
+          </ng-container>
+        </mat-menu>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="tableAllPrice__body">
+    <ng-container *ngIf="!isTablet">
+      <div class="tableAllPrice__tr" *ngFor="let row of dataTablePrice.table_body">
+        <div class="tableAllPrice__td">{{row.name}}</div>
+        <div class="tableAllPrice__td">${{row.price_period_1 | currencyFormat}}</div>
+        <div class="tableAllPrice__td">${{row.price_period_2 | currencyFormat}}</div>
+        <div class="tableAllPrice__td">${{row.price_period_3 | currencyFormat}}</div>
+        <div class="tableAllPrice__td" *ngIf="row.price_period_4">${{row.price_period_4 | currencyFormat}}</div>
+        <div class="tableAllPrice__td" *ngIf="row.price_period_5">${{row.price_period_5 | currencyFormat}}</div>
+        <div class="tableAllPrice__td" *ngIf="!row.price_period_4">-</div>
+        <div class="tableAllPrice__td" *ngIf="!row.price_period_5">-</div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="isTablet">
+      <div class="tableAllPrice__tr" *ngFor="let row of dataTablePrice.table_body">
+        <div class="tableAllPrice__td">{{row.name}}</div>
+        <div class="tableAllPrice__td" *ngIf="currencyData === 1">${{row.price_period_1 | currencyFormat}}</div>
+        <div class="tableAllPrice__td" *ngIf="currencyData === 2">${{row.price_period_2 | currencyFormat}}</div>
+        <div class="tableAllPrice__td" *ngIf="currencyData === 3">${{row.price_period_3 | currencyFormat}}</div>
+        <div class="tableAllPrice__td" *ngIf="row.price_period_4 && currencyData === 4">
+          ${{row.price_period_4 | currencyFormat}}
+        </div>
+        <div class="tableAllPrice__td" *ngIf="row.price_period_5 && currencyData === 5">
+          ${{row.price_period_5 | currencyFormat}}
+        </div>
+        <div class="tableAllPrice__td" *ngIf="!row.price_period_4 && currencyData === 4">-</div>
+        <div class="tableAllPrice__td" *ngIf="!row.price_period_5 && currencyData === 5">-</div>
+      </div>
+    </ng-container>
+  </div>
+</div>

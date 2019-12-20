@@ -1,0 +1,30 @@
+.sliderLoop
+  display: grid
+
+  .item
+    position: relative
+    grid-row-start: 1
+    grid-row-end: 3
+    grid-column-start: 1
+    grid-column-end: 3
+    opacity: 0
+    width: 1150px
+    max-width: 100%
+    min-height: 150px
+    text-align: center
+    margin: 0px auto
+    transform-origin: left top
+
+    &:first-child
+      opacity: 1
+
+      > .inner
+        transform: scale(1,1)
+
+    .inner
+      position: absolute
+      left: 0
+      padding: 10px
+      background-color: #ccc
+      transform: scale(0)
+      transition: transform .4s

@@ -1,0 +1,30 @@
+<div class="container">
+  <h1 class="center">Calculator</h1>
+
+  <hr>
+
+  <mt-calculator></mt-calculator>
+
+  <br>
+
+  <h2 class="center">Field calculate</h2>
+
+  <hr>
+
+  <div class="listButton">
+    <div class="listButton__inner" *ngFor="let btn of btnList">
+      <button class="btn btnBlue"
+              mat-button
+              [ngStyle]="{background: btn.color}"
+              (click)="selectedBtn(btn.value,btn.id)">
+        {{btn.value}}
+      </button>
+      <span *ngIf="buttonsList[btn.id] !== 0">{{buttonsList[btn.id]}}</span>
+    </div>
+  </div>
+  <!-- START calculate field -->
+  <mat-form-field appearance="fill">
+    <mat-label>Examples counter field</mat-label>
+    <input matInput type="number" [value]="paymentAmount">
+  </mat-form-field>
+</div>

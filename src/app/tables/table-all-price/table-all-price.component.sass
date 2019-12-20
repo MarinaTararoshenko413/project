@@ -1,0 +1,452 @@
+$default-font: "CircularStd-Book", sans-serif
+$font-black: "CircularStd-Black", sans-serif
+$font-bold: "CircularStd-Bold", sans-serif
+$white: #fff
+$colorRed: #FF3366
+$accentPrimary: $colorRed
+$shadowLight: rgba(0, 0, 0, .25)
+$borderTablePrice: #EBEBEB
+$primaryTablePrice: #0B151B
+$secondaryTablePrice: rgba(11,21,27,.5)
+$colorExtraLight: rgba(11, 21, 28, .3)
+$bgAccentPrimary: $colorRed
+
+.tablePrice + .small_text,
+app-table-price + .small_text,
+app-table-domain + .small_text
+    width: 808px
+    max-width: 100%
+    font-size: 16px
+    padding-left: 64px
+    margin: 12px auto 0
+
+.tablePrice.v2 + .small_text
+app-table-domain + .small_text
+  font-size: 12px
+  padding-left: 22px
+
+.tablePrice
+  width: 808px
+  max-width: 100%
+  padding: 20px 64px
+  margin: 0 auto
+  border-radius: 10px
+  background-color: $white
+  box-shadow: 4px 12px 55px $shadowLight
+
+.tablePrice__header,
+.tablePrice__body--row
+  display: flex
+
+.tablePrice__body--row
+  border-top: 1px solid $borderTablePrice
+
+  > .br
+    display: none
+
+.tablePrice__header--td,
+.tablePrice__body--td
+  flex: 1
+  font-size: 16px
+  color: $primaryTablePrice
+  text-align: center
+
+  &:first-child
+    min-width: 114px
+    max-width: 114px
+    text-align: left
+
+  &:last-child
+    min-width: 120px
+    max-width: 120px
+    text-align: left
+
+  &:nth-last-child(2)
+    min-width: 134px
+    max-width: 134px
+    text-align: right
+
+.tablePrice__header--td
+  font-family: $font-black
+  line-height: 1.6
+  padding: 12px 0
+  text-transform: uppercase
+
+.tablePrice__body--td
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 62px
+
+  &:last-child
+    align-items: flex-end
+
+  .price
+    font-family: $font-bold
+    font-size: 20px
+    line-height: 1
+
+  .currency
+    display: inline-block
+    font-size: 12px
+    vertical-align: middle
+    margin-bottom: 7px
+
+  .sub_price
+    color: $secondaryTablePrice
+
+  .btn
+    min-width: auto
+    font-family: $font-bold
+    font-size: 14px
+    color: $colorRed
+    margin-right: -16px
+
+    &[disabled]
+      color: $colorRed !important
+      background-color: transparent
+      opacity: .5
+
+    .mat-icon
+      color: $colorRed
+      margin-bottom: 3px
+
+.tablePrice.v2
+  .tablePrice__body--row:first-child
+    border-top: none
+
+  .tablePrice__header--td,
+  .tablePrice__body--td
+    &:first-child,
+    &:first-child
+      min-width: 84px
+      max-width: 84px
+      padding-left: 8px
+
+    &:nth-child(2),
+    &:nth-child(2)
+      align-items: flex-start
+      min-width: 115px
+      max-width: 115px
+      padding-right: 8px
+
+    &:nth-child(3),
+    &:nth-child(3)
+      align-items: flex-start
+      flex: 2
+      padding-right: 8px
+
+  .tablePrice__body--td
+    &.small
+      font-size: 10px
+
+    .price
+      font-size: 20px
+
+      .currency
+        font-size: 20px
+
+    .sub_price
+      display: block
+      font-family: $default-font
+      font-size: 16px
+      color: $primaryTablePrice
+      margin-bottom: 3px
+
+    .not_available
+      font-size: 20px
+
+// START tableAllPrice
+app-table-all-price
+  max-width: 100%
+
+.tableAllPrice + .small_text,
+app-table-all-price + .small_text
+  width: 894px
+  max-width: 100%
+  padding-left: 37px
+  margin: 12px auto 0
+
+.tableAllPrice
+  width: 894px
+  max-width: 100%
+  padding: 12px 50px 12px 34px
+  margin: 0 auto
+  border-radius: 10px
+  background-color: $white
+  box-shadow: 5px 12px 55px $shadowLight
+
+.tableAllPrice__header,
+.tableAllPrice__tr
+  display: flex
+
+.tableAllPrice__th,
+.tableAllPrice__td
+  flex: 1
+  font-size: 16px
+  padding: 0 8px
+
+  &:first-child
+    min-width: 234px
+    max-width: 234px
+    padding-left: 3px
+
+  &:last-child
+    min-width: 100px
+    max-width: 100px
+    padding-right: 6px
+
+.tableAllPrice__th
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 50px
+  font-family: $font-black
+  color: $accentPrimary
+
+  & + .tableAllPrice__th
+    border-left: 1px solid $borderTablePrice
+
+  &:first-child
+    justify-content: flex-start
+
+.tableAllPrice__tr
+  border-top: 1px solid $borderTablePrice
+
+.tableAllPrice__td
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 34px
+
+  & + .tableAllPrice__td
+    border-left: 1px solid $borderTablePrice
+
+  &:first-child
+    justify-content: flex-start
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  // START tableAllPrice
+  .tableAllPrice
+    width: 390px
+    padding: 12px 36px
+
+  .tableAllPrice__th .mat-button
+    font-family: $font-black
+    font-size: 16px
+    padding: 0
+
+    .mat-icon
+      margin-top: 3px
+
+  .tableAllPrice + .small_text,
+  app-table-all-price + .small_text
+    width: 390px
+    text-align: center
+    padding-left: 0
+
+  // START tablePrice
+  app-table-domain
+    display: block
+    padding: 0 12px
+
+  app-table-domain + .small_text
+    padding-left: 127px
+
+  app-table-price + .small_text
+    padding-left: 26px
+
+  .tablePrice
+    padding: 32px
+
+  .tablePrice__wrapper
+    padding: 0 12px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .tablePrice.v2 .tablePrice__body--td
+    &:first-child,
+    &:nth-child(2)
+      min-width: 64px
+      max-width: 64px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px)
+  // START tablePrice v1
+  .tablePrice.v1
+    padding: 0
+
+    .tablePrice__body--row
+      flex-wrap: wrap
+
+      &:first-child
+        border-radius: 10px 10px 0 0
+
+      &.open
+        .mat-icon-button
+          background-color: rgba(0,0,0,.87)
+          transform: rotate(180deg)
+
+        .tablePrice__body--nav
+          margin-bottom: 20px
+          border-bottom: 1px solid $borderTablePrice
+
+    .tablePrice__body--nav
+      display: flex
+      align-items: center
+      width: 100%
+      min-height: 72px
+      padding: 0 20px
+
+      .price
+        font-family: $font-bold
+        font-size: 20px
+        line-height: 1.1
+        margin-left: auto
+
+        .sub_price
+          display: block
+          font-size: 12px
+          line-height: 1
+          color: $colorExtraLight
+          text-align: right
+
+      .mat-icon-button
+        width: 32px
+        height: 32px
+        line-height: 32px
+        color: $white
+        margin-left: 20px
+        background-color: $bgAccentPrimary
+
+        .mat-icon
+          width: 32px
+          height: 32px
+          line-height: 32px
+
+    .tablePrice__body--td
+      flex: none
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      width: 100%
+      max-width: 100%
+      min-width: auto
+      height: auto
+      font-family: $font-bold
+      padding-left: 72px
+      padding-right: 72px
+      margin-bottom: 3px
+
+      &:last-child
+        justify-content: center
+        margin-bottom: 0
+
+      .title
+        font-family: $default-font
+
+      .btn
+        min-width: 140px
+        margin: 20px  auto
+
+  // START tablePrice v2
+  .tablePrice.v2
+    padding: 20px 16px
+
+@media only screen and (max-width: 670px)
+  app-table-domain + .small_text
+    padding: 0 16px
+    text-align: center
+
+  .tablePrice.v2
+    width: 286px
+
+    .tablePrice__body--td
+      height: auto
+      flex: none
+
+      &:first-child
+        width: 100%
+        max-width: 100%
+        padding: 0
+        align-items: center
+        margin-bottom: 6px
+
+      &:nth-of-type(3)
+        width: 30%
+        margin-bottom: 3px
+        text-align: left
+
+      &:nth-of-type(3),
+      &:nth-of-type(6)
+        flex: none
+        min-width: auto
+        max-width: 100%
+        padding-left: 30px
+
+      &:nth-of-type(4),
+      &:last-child
+        flex: none
+        width: 70%
+        min-width: auto
+        max-width: 100%
+
+      &:last-child
+        flex: 1
+
+      &:nth-of-type(4)
+        text-align: left
+        margin-bottom: 6px
+
+      .not_available
+        max-width: 75px
+        text-align: left !important
+
+      .btn
+        line-height: 32px
+        padding: 0 6px
+        margin-top: auto
+        margin-right: 0
+
+    .tablePrice__body--row
+      flex-wrap: wrap
+      padding-bottom: 4px
+
+      & + .tablePrice__body--row
+        padding-top: 20px
+
+      > .br
+        display: block
+        width: 100%
+
+  // START tableAllPrice
+  app-table-all-price
+    display: block
+    padding: 0 6px
+
+  .tableAllPrice
+    padding-left: 16px
+    padding-right: 16px
+
+@media only screen and (max-width: 359px)
+  app-table-all-price
+    padding: 0
+
+  .tableAllPrice
+    padding-left: 10px
+    padding-right: 10px
+
+  .tableAllPrice__th:first-child,
+  .tableAllPrice__td:first-child
+    min-width: 210px
+
+  .tableAllPrice__th:last-child,
+  .tableAllPrice__td:last-child
+    min-width: 90px
+
+  .tableAllPrice__td
+    font-size: 14px
+
+
+

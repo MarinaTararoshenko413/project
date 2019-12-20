@@ -1,0 +1,190 @@
+.body1
+  font-family: $default-font
+  font-size: 20px
+  line-height: 1.4
+  color: $primary
+
+.ttl1
+  font-family: $font-black
+  font-size: 64px
+  line-height: 1.1
+  margin: 0
+
+.ttl2
+  font-family: $font-bold
+  font-size: 42px
+  line-height: 1.14
+  margin-bottom: 0 0 22px
+
+  &.white
+    color: $white
+
+.ttl3
+  font-family: $font-bold
+  font-size: 24px
+  line-height: 1.33
+  margin: 0 0 22px
+
+  &.white
+    color: $white
+
+.sup_ttl2
+  font-family: $font-bold
+  font-size: 20px
+  margin: 0
+
+.sub_ttl2
+  font-family: $font-medium
+  font-size: 24px
+  color: $colorBlue
+  margin-bottom: 30px
+
+.rel
+  position: relative
+
+.abs
+  position: absolute
+
+.w50
+  width: 50%
+
+.w100
+  width: 100%
+
+.p-y-30
+  padding: 30px 0
+
+.m-x-auto
+  margin-left: auto
+  margin-right: auto
+
+.w-auto
+  width: auto
+
+.vertical-margin
+  margin-top: 24px
+  margin-bottom: 24px
+
+.upper
+  text-transform: uppercase
+
+.center
+  text-align: center
+
+.accent
+  color: #428FD7
+
+.accent-second
+  color: #ff1380
+
+.nowrap_ellipsis
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.clear
+  content: ""
+  width: 100%
+  display: block
+  clear: both
+
+.list_style_none
+  list-style: none
+  padding: 0
+  margin: 0
+// START flex
+.flex
+  display: flex
+
+.flex_wrap
+  display: flex
+  flex-wrap: wrap
+
+.flex_end
+  display: flex
+  align-items: flex-end
+
+.flex_column
+  display: flex
+  flex-direction: column
+
+.flex_column_start
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.flex_column_end
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
+.flex_center
+  display: flex
+  align-items: center
+
+.flex_between
+  display: flex
+  justify-content: space-between
+
+.flex_between_center
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.flex_start_center
+  display: flex
+  justify-content: flex-start
+  align-items: center
+
+.flex_start
+  display: flex
+  align-items: flex-start
+
+.flex_end_center
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+.flex_justify_end
+  display: flex
+  justify-content: flex-end
+
+.flex_center_center
+  display: flex
+  justify-content: center
+  align-items: center
+
+.flex_justify_center
+  display: flex
+  justify-content: center
+
+.flex_row
+  display: flex
+  flex-direction: row
+// END flex
+
+// START button
+.mat-button
+  &.btn
+    font-family: $font-medium
+    max-width: 100%
+    padding: 0 16px
+    font-size: 14px
+    border: none
+
+  &.btnBlue
+    color: $white
+    background-color: $colorBlue
+
+  &.btnWhite
+    min-width: 200px
+    background-color: $white
+    color: $colorRed
+
+  &.btn[disabled]
+    background-color: #9b9b9b
+    color: $white !important
+    cursor: not-allowed
+    border-color: #9b9b9b
+// END button
+
