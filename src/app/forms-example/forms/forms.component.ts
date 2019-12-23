@@ -60,7 +60,7 @@ export class FormsComponent implements OnInit {
 
     selectedBtn(sum: string, id: string): void {
         this.payment = Number(sum) + this.payment;
-        this.paymentAmount = this.currencyFormat.transform(this.payment);
+        this.paymentAmount = this.currencyFormat.transform(this.payment, null);
         this.btnList[+id - 1].color = this.getRandColor();
         this.buttonsList[id]++;
 

@@ -48,6 +48,62 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "es_CL": {
+              "aot": true,
+              "outputPath": "dist/example-project/browser",
+              "i18nFile": "src/locale/messages.es-CL.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es-CL",
+              "i18nMissingTranslation": "error"
+            },
+            "es_PE": {
+              "aot": true,
+              "outputPath": "dist/example-project/browser",
+              "i18nFile": "src/locale/messages.es-PE.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es-PE",
+              "i18nMissingTranslation": "error"
+            },
+            "es_CO": {
+              "aot": true,
+              "outputPath": "dist/example-project/browser",
+              "i18nFile": "src/locale/messages.es-CO.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es-CO",
+              "i18nMissingTranslation": "error"
+            },
+            "es_EC": {
+              "aot": true,
+              "outputPath": "dist/example-project/browser",
+              "i18nFile": "src/locale/messages.es-EC.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es-EC",
+              "i18nMissingTranslation": "error"
+            },
+            "es_AR": {
+              "aot": true,
+              "outputPath": "dist/example-project/browser",
+              "i18nFile": "src/locale/messages.es-AR.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es-AR",
+              "i18nMissingTranslation": "error"
+            },
+            "es_MX": {
+              "aot": true,
+              "outputPath": "dist/example-project/browser",
+              "i18nFile": "src/locale/messages.es-MX.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es-MX",
+              "i18nMissingTranslation": "error"
+            },
+            "en_US": {
+              "aot": true,
+              "outputPath": "dist/example-project/browser",
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en_US",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -59,6 +115,45 @@
           "configurations": {
             "production": {
               "browserTarget": "example-project:build:production"
+            },
+            "production-es_CL": {
+              "browserTarget": "example-project:build:production-es_CL"
+            },
+            "es_CL": {
+              "browserTarget": "example-project:build:es_CL"
+            },
+            "production-es_PE": {
+              "browserTarget": "example-project:build:production-es_PE"
+            },
+            "es_PE": {
+              "browserTarget": "example-project:build:es_PE"
+            },
+            "production-es_CO": {
+              "browserTarget": "example-project:build:production-es_CO"
+            },
+            "es_CO": {
+              "browserTarget": "example-project:build:es_CO"
+            },
+            "production-es_EC": {
+              "browserTarget": "example-project:build:production-es_EC"
+            },
+            "es_EC": {
+              "browserTarget": "example-project:build:es_EC"
+            },
+            "production-es_AR": {
+              "browserTarget": "example-project:build:production-es_AR"
+            },
+            "es_AR": {
+              "browserTarget": "example-project:build:es_AR"
+            },
+            "production-es_MX": {
+              "browserTarget": "example-project:build:production-es_MX"
+            },
+            "es_MX": {
+              "browserTarget": "example-project:build:es_MX"
+            },
+            "en_US": {
+              "browserTarget": "example-project:build:en_US"
             }
           }
         },

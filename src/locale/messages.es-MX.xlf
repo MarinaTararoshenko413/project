@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es-CL" datatype="plaintext" original="ng2.template" target-language="es-MX">
+    <body>
+    <trans-unit id="632aa76d9c0442767c13134e3d7ad78e720bb05b" datatype="html">
+        <source>Draggin block</source><target state="new">Draggin block</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit><trans-unit id="d40007c596a19efc50690323d48a3a07d015d91a" datatype="html">
+        <source>Animation numbeers</source><target state="new">Animation numbeers</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit><trans-unit id="4c9e2467c6380a8cb81a247b82f51ccb69599256" datatype="html">
+        <source>Example animations</source><target state="new">Example animations</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/progress-services1/progress-services1.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit><trans-unit id="6598164116f3728e8fa537b4e1b7173791d9eb21" datatype="html">
+        <source>Example pagination</source><target state="new">Example pagination</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pagination/pagination.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit><trans-unit id="fb9d1b3c30f0a19f584420901931598129844444" datatype="html">
+        <source>Vertical custom slider</source><target state="new">Vertical custom slider</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sliders/sliders.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit><trans-unit id="cf8caac4de0166eae6cd0fdfd010ee92b995cd96" datatype="html">
+        <source>Calculator</source><target state="new">Calculator</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/forms-example/forms/forms.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit><trans-unit id="1dcfae37a4b57c67640204eb3cbd32404ef7597f" datatype="html">
+        <source>Field calculate</source><target state="new">Field calculate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/forms-example/forms/forms.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit><trans-unit id="96ed6e12461c9461e1e18a921a3b3d3c31d5628b" datatype="html">
+        <source>Examples counter field</source><target state="new">Examples counter field</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/forms-example/forms/forms.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit></body>
+  </file>
+</xliff>
